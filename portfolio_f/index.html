@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tusar | CSE Portfolio</title>
+
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Portfolio Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- ═══════════════════════════════════════════
+         HEADER
+    ════════════════════════════════════════════ -->
+    <header id="header">
+        <a href="#home" class="logo">TU<span>.</span>SAR</a>
+        <nav id="nav">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#certifications">Achievement</a> 
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- ═══════════════════════════════════════════
+         HOME
+    ════════════════════════════════════════════ -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <p class="home-greeting">// Hello, World!</p>
+            <h1>I'm <span>Tusar Abdullah</span><br>CSE Student</h1>
+            <div class="typing-wrapper">
+                I love <span class="typing-text" id="typingText"></span>
+            </div>
+            <p class="home-desc">
+                A passionate Computer Science &amp; Engineering student specializing in
+                Data Structures, Algorithms, and Machine Learning. Building intelligent
+                solutions from elegant code.
+            </p>
+            <div class="home-btns">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fa-solid fa-paper-plane"></i> Hire Me
+                </a>
+                <a href="#projects" class="btn btn-outline">
+                    <i class="fa-solid fa-code"></i> My Work
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/tusar-abdullah" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>   
+                <a href="https://github.com/TusarAbdullah" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" title="LeetCode"><i class="fa-solid fa-terminal"></i></a>
+                <a href="https://codeforces.com/profile/tus79101" title="Codeforces" target="_blank"><i class="fa-solid fa-code"></i></a>
+                <a href="#" title="Kaggle"><i class="fa-solid fa-k"></i></a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="main.jpg" alt="Alex">
+            <div class="img-badge">
+                <span>2+</span>
+                Years Coding
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SERVICES
+    ════════════════════════════════════════════ -->
+    <section class="services" id="services">
+        <p class="section-tag reveal">What I Do</p>
+        <h2 class="section-title reveal">My <span style="color:var(--red)">Services</span></h2>
+        <div class="services-grid">
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3>Machine Learning</h3>
+                <p>Building and training ML models for classification, regression, and clustering tasks. Experienced with scikit-learn, TensorFlow, and PyTorch.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3>Data Analysis</h3>
+                <p>Processing and visualizing complex datasets using Pandas, NumPy, and Matplotlib to extract meaningful insights and patterns.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                <h3>Algorithm Design</h3>
+                <p>Designing and optimizing algorithms for complex computational problems. Competitive programming with a focus on time and space complexity.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                <h3>Web Development</h3>
+                <p>Creating responsive and dynamic web applications using modern frontend and backend technologies with clean, maintainable code.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                <h3>Database Design</h3>
+                <p>Designing efficient relational and non-relational database schemas. Proficient in SQL, MySQL, PostgreSQL, and MongoDB.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Problem Solving</h3>
+                <p>Expert competitive programmer with strong foundations in DSA — trees, graphs, dynamic programming, and greedy algorithms.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SKILLS
+    ════════════════════════════════════════════ -->
+    <section class="skills" id="skills">
+        <p class="section-tag reveal">Technical Proficiency</p>
+        <h2 class="section-title reveal">My <span style="color:var(--red)">Skills</span></h2>
+        <div class="skills-container">
+
+            <div class="skills-left reveal">
+                <p>Grounded in Computer Science fundamentals with a strong focus on Data Structures, Algorithms, and Machine Learning. I enjoy solving hard problems and building systems that scale.</p>
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">C</span>
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">scikit-learn</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">Jupyter</span>
+                </div>
+            </div>
+
+            <div class="skill-bars reveal">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Data Structures &amp; Algorithms</span>
+                        <span class="skill-pct">90%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Machine Learning</span>
+                        <span class="skill-pct">82%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-pct">88%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">C / C++</span>
+                        <span class="skill-pct">80%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Deep Learning</span>
+                        <span class="skill-pct">72%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Web Development</span>
+                        <span class="skill-pct">75%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROJECTS
+    ════════════════════════════════════════════ -->
+    <section class="projects" id="projects">
+        <p class="section-tag reveal">What I've Built</p>
+        <h2 class="section-title reveal">Featured <span style="color:var(--red)">Projects</span></h2>
+        <div class="projects-grid">
+
+            <div class="project-card reveal">
+                <div class="project-top">
+                    <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+                    <div class="project-links">
+                        <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" title="Live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>Sentiment Analyzer</h3>
+                    <p>NLP-based sentiment classification model trained on Twitter data. Achieves 89% accuracy using LSTM and BERT embeddings.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">Python</span>
+                        <span class="stack-tag">PyTorch</span>
+                        <span class="stack-tag">BERT</span>
+                        <span class="stack-tag">NLTK</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-top">
+                    <div class="project-icon"><i class="fa-solid fa-chart-scatter"></i></div>
+                    <div class="project-links">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>Stock Price Predictor</h3>
+                    <p>Time-series forecasting model using LSTM networks to predict next-day stock prices with historical OHLCV data.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">Python</span>
+                        <span class="stack-tag">TensorFlow</span>
+                        <span class="stack-tag">Pandas</span>
+                        <span class="stack-tag">Matplotlib</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-top">
+                    <div class="project-icon"><i class="fa-solid fa-route"></i></div>
+                    <div class="project-links">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>Graph Path Visualizer</h3>
+                    <p>Interactive visualization of BFS, DFS, Dijkstra, and A* pathfinding algorithms on weighted and unweighted grids.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">JavaScript</span>
+                        <span class="stack-tag">React</span>
+                        <span class="stack-tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-top">
+                    <div class="project-icon"><i class="fa-solid fa-eye"></i></div>
+                    <div class="project-links">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>Face Recognition System</h3>
+                    <p>Real-time face detection and recognition using OpenCV and deep CNNs. Supports multi-face tracking and attendance logging.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">Python</span>
+                        <span class="stack-tag">OpenCV</span>
+                        <span class="stack-tag">CNN</span>
+                        <span class="stack-tag">SQLite</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-top">
+                    <div class="project-icon"><i class="fa-solid fa-comments"></i></div>
+                    <div class="project-links">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>AI Study Chatbot</h3>
+                    <p>A conversational AI tutor for CS students. Answers questions on DSA topics, explains concepts, and generates practice problems.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">Python</span>
+                        <span class="stack-tag">LangChain</span>
+                        <span class="stack-tag">FastAPI</span>
+                        <span class="stack-tag">React</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-top">
+                    <div class="project-icon"><i class="fa-solid fa-table-cells"></i></div>
+                    <div class="project-links">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>Disease Prediction Model</h3>
+                    <p>ML pipeline for early disease prediction using patient data. Compares Random Forest, SVM, and XGBoost classifiers.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">Python</span>
+                        <span class="stack-tag">scikit-learn</span>
+                        <span class="stack-tag">XGBoost</span>
+                        <span class="stack-tag">Streamlit</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         EDUCATION
+    ════════════════════════════════════════════ -->
+    <section class="education" id="education">
+        <p class="section-tag reveal">Academic Journey</p>
+        <h2 class="section-title reveal">My <span style="color:var(--red)">Education</span></h2>
+        <div class="timeline">
+
+            <div class="timeline-item reveal">
+                <div class="timeline-date">2023 — Present</div>
+                <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+                <h4>University of Asia Pacific</h4>
+                <p>Studying core CS fundamentals: Data Structures, Algorithms, Machine Learning, Database Systems, Operating Systems, and Computer Networks. CGPA: 3.93 / 4.00</p>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-date">2019 — 2021</div>
+                <h3>Higher Secondary Certificate (HSC)</h3>
+                <h4>City College,Khulna — Science Group</h4>
+                <p>Completed HSC with distinction, majoring in Physics, Chemistry, and Mathematics. GPA: 5.00 / 5.00</p>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-date">2018 — 2019</div>
+                <h3>Secondary School Certificate (SSC)</h3>
+                <h4>Khulna Zilla School</h4>
+                <p>Completed SSC with distinction. Strong foundation in Mathematics and Sciences. GPA: 5.00 / 5.00</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         EXPERIENCE
+    ════════════════════════════════════════════ -->
+    <section class="experience" id="experience">
+        <p class="section-tag reveal">Work History</p>
+        <h2 class="section-title reveal">My <span style="color:var(--red)">Experience</span></h2>
+        <div class="exp-grid">
+
+            <div class="exp-card reveal">
+                <div class="exp-logo"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="exp-content">
+                    <div class="exp-meta">
+                        <h3>ML Research Intern</h3>
+                        <span class="exp-period">Jan 2025 — Jan 2026</span>
+                    </div>
+                    <p class="exp-company">ML Research Lab, UAP</p>
+                    <p class="exp-desc">Working on voice to 3D sign generation research, converting spoken language into 3D sign language animations using deep learning techniques.</p>
+                </div>
+            </div>
+
+           <div class="exp-card reveal">
+    <div class="exp-logo"><i class="fa-solid fa-trophy"></i></div>
+    <div class="exp-content">
+        <div class="exp-meta">
+            <h3>Competitive Programmer</h3>
+            <span class="exp-period">2022 — Present</span>
+        </div>
+        <p class="exp-company">Codeforces / LeetCode / HackerRank</p>
+        <p class="exp-desc">Actively solving algorithmic problems on competitive programming platforms. Participated in inter-university programming contests across multiple universities.</p>
+    </div>
+</div>
+
+            <div class="exp-card reveal">
+                <div class="exp-logo"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <div class="exp-content">
+                    <div class="exp-meta">
+                        <h3>CS Tutor (Freelance)</h3>
+                        <span class="exp-period">2023 — Present</span>
+                    </div>
+                    <p class="exp-company">Self-Employed</p>
+                    <p class="exp-desc">Teaching Data Structures, Algorithms, and Python to junior students and beginners. Conducted 100+ tutoring sessions and created study materials used by 200+ students.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     
+    ════════════════════════════════════════════ -->
+ <!-- ACHIEVEMENTS -->
+<section class="certifications" id="certifications">
+    <p class="section-tag reveal">Awards & Recognition</p>
+    <h2 class="section-title reveal">My <span style="color:var(--red)">Achievements</span></h2>
+    <div class="certs-grid">
+
+        <div class="cert-card reveal">
+            <p class="cert-issuer">UAP · 2024</p>
+            <h3>Vice Chancellor's List Award Fall 2024</h3>
+            <a href="https://www.linkedin.com/in/tusar-abdullah/details/honors/" target="_blank" class="cert-badge">
+                <i class="fa-brands fa-linkedin"></i> View on LinkedIn
+            </a>
+        </div>
+
+        <div class="cert-card reveal">
+            <p class="cert-issuer">UAP · 2024</p>
+            <h3>Vice Chancellor's List Award Spring 2024</h3>
+            
+            <a href="https://www.linkedin.com/in/tusar-abdullah/details/honors/" target="_blank" class="cert-badge">
+                <i class="fa-brands fa-linkedin"></i> View on LinkedIn
+            </a>
+        </div>
+
+        <div class="cert-card reveal">
+            <p class="cert-issuer">UAP · 2023</p>
+            <h3>Vice Chancellor's List Award Fall 2023</h3>
+            
+            <a href="https://www.linkedin.com/in/tusar-abdullah/details/honors/" target="_blank" class="cert-badge">
+                <i class="fa-brands fa-linkedin"></i> View on LinkedIn
+            </a>
+        </div>
+
+        <div class="cert-card reveal">
+            <p class="cert-issuer">UAP · 2023</p>
+            <h3>Vice Chancellor's Honour List Award Spring 2023</h3>
+           
+            <a href="https://www.linkedin.com/in/tusar-abdullah/details/honors/" target="_blank" class="cert-badge">
+                <i class="fa-brands fa-linkedin"></i> View on LinkedIn
+            </a>
+        </div>
+
+        <div class="cert-card reveal">
+            <p class="cert-issuer">UAP · 2022</p>
+            <h3>Dean’s Honour List Award Fall 2022</h3>
+            
+            <a href="https://www.linkedin.com/in/tusar-abdullah/details/honors/" target="_blank" class="cert-badge">
+                <i class="fa-brands fa-linkedin"></i> View on LinkedIn
+            </a>
+        </div>
+
+        <div class="cert-card reveal">
+            <p class="cert-issuer">University Name · Year</p>
+            <h3>Award Name Here</h3>
+            <p class="cert-date">Event / Competition Name</p>
+            <a href="https://www.linkedin.com/posts/your-post-link-6" target="_blank" class="cert-badge">
+                <i class="fa-brands fa-linkedin"></i> View on LinkedIn
+            </a>
+        </div>
+
+        <div class="cert-card reveal">
+            <p class="cert-issuer">University Name · Year</p>
+            <h3>Award Name Here</h3>
+            <p class="cert-date">Event / Competition Name</p>
+            <a href="https://www.linkedin.com/posts/your-post-link-7" target="_blank" class="cert-badge">
+                <i class="fa-brands fa-linkedin"></i> View on LinkedIn
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    <!-- ═══════════════════════════════════════════
+         BLOG
+    ════════════════════════════════════════════ -->
+    <section class="blog" id="blog">
+        <p class="section-tag reveal">Thoughts &amp; Writings</p>
+        <h2 class="section-title reveal">My <span style="color:var(--red)">Blog</span></h2>
+        <div class="blog-grid">
+
+            <div class="blog-card reveal">
+                <div class="blog-thumb">🧠</div>
+                <div class="blog-body">
+                    <p class="blog-category">Machine Learning</p>
+                    <h3>Understanding Transformer Architecture from Scratch</h3>
+                    <p>A deep dive into how attention mechanisms and transformers work — with code examples in PyTorch.</p>
+                    <div class="blog-meta">
+                        <span>Dec 2024 · 8 min read</span>
+                        <span class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card reveal">
+                <div class="blog-thumb">⚡</div>
+                <div class="blog-body">
+                    <p class="blog-category">Algorithms</p>
+                    <h3>Dynamic Programming Patterns Every Developer Should Know</h3>
+                    <p>Breaking down the 10 most important DP patterns with visual examples and LeetCode solutions.</p>
+                    <div class="blog-meta">
+                        <span>Nov 2024 · 12 min read</span>
+                        <span class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card reveal">
+                <div class="blog-thumb">📊</div>
+                <div class="blog-body">
+                    <p class="blog-category">Data Science</p>
+                    <h3>Feature Engineering: The Secret Weapon in ML Competitions</h3>
+                    <p>Practical techniques to extract maximum signal from raw data — the key difference in competitive ML.</p>
+                    <div class="blog-meta">
+                        <span>Oct 2024 · 6 min read</span>
+                        <span class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CONTACT
+    ════════════════════════════════════════════ -->
+    <section class="contact" id="contact">
+        <p class="section-tag reveal">Get In Touch</p>
+        <h2 class="section-title reveal">Contact <span style="color:var(--red)">Me</span></h2>
+        <div class="contact-grid">
+
+            <div class="contact-info reveal">
+                <h3>Let's work<br>together.</h3>
+                <p>Whether you have a project in mind, a research collaboration, or just want to connect — my inbox is always open.</p>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-item-text">
+                            <label>Email</label>
+                            <span>tusarabdullahcse@email.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-item-text">
+                            <label>Location</label>
+                            <span>Dhaka, Bangladesh</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="contact-item-text">
+                            <label>Open To</label>
+                            <span>Internships &amp; Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form reveal">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder=""></textarea>
+                </div>
+                <button class="btn btn-primary" onclick="handleSubmit(this)">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+    ════════════════════════════════════════════ -->
+    <footer>
+        <div class="footer-logo">TU<span>.</span>SAR</div>
+        <p>Crafted with <span>♥</span> by Tusar · 2026</p>
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Portfolio Scripts -->
+    <script src="script.js"></script>
+
+</body>
+</html>
